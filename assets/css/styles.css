@@ -473,17 +473,21 @@ body.light-theme {
 .about__description {
   margin-bottom: 2rem;
 }
-
 /*=============== SKILLS ===============*/
 .skills__container {
   row-gap: 2rem;
   padding-top: 1rem;
+  display: flex; /* Add this line to make the direct children of .skills__container flex items */
+  flex-wrap: wrap; /* Add this line to allow wrapping of items if the screen width is limited */
+  justify-content: space-between; /* Add this line to evenly space the items horizontally */
 }
 
 .skills__content {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
+  flex: 0 0 calc(50% - 1rem); /* Add this line to make the content items take 50% of the container width with 1rem spacing */
+  margin: 0.5rem; /* Add this line to provide spacing between the content items */
 }
 
 .skills__title {
@@ -495,7 +499,7 @@ body.light-theme {
 }
 
 .skills__box {
-  display: flex;
+  display: flex; /* Add this line to make the direct children of .skills__box flex items */
   justify-content: center;
   column-gap: 2.5rem;
 }
@@ -507,7 +511,7 @@ body.light-theme {
 }
 
 .skills__data {
-  display: flex;
+  display: flex; /* Add this line to make the direct children of .skills__data flex items */
   column-gap: .5rem;
 }
 
@@ -525,6 +529,7 @@ body.light-theme {
 .skills__level {
   font-size: var(--tiny-font-size);
 }
+
 
 /*=============== SERVICES ===============*/
 .services__container {

@@ -328,6 +328,7 @@ body.light-theme {
 
 .home__img {
   width: 280px;
+  margin-top: 20px; 
 }
 
 .home__handle {
